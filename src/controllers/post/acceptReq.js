@@ -16,7 +16,7 @@ const acceptReq = async (req, res) => {
             post.isAccepted = true;
             post.isAcceptedBy = req.user._id;
 
-            //sent a post request to the user who has sent the request to api https://w2e9j471i2.execute-api.ap-south-1.amazonaws.com/dev/send-email
+           
             const data = {
                 toEmail: post.userId.email,
                 subject: "Food Donation Request Accepted",
